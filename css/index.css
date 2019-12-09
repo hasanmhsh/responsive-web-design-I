@@ -1,3 +1,251 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+    max-width: 875px;
+    margin: 30px auto;
+    text-align:center;
+    width:100%;
+}
+
+:root{
+    font-size:16pt;
+}
+
+h1{
+    font-size: 75pt;
+}
+h3{
+    font-size:20pt;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+header img{
+    width:auto;
+}
+
+header nav a{
+	color: dimgrey;
+    text-decoration: none;
+    width:100%;
+    font-size: 20pt;
+}
+
+    header nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .horizontal-part{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .chunk:nth-child(2){
+        margin-left: 25px;
+    }
+
+    .chunk-1:nth-child(2){
+        margin-left: 25px;
+    }
+
+    .chunk-1:nth-child(3){
+        margin-left: 25px;
+    }
+
+@media(max-width:900px){
+    header nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        order:2;
+        margin: 25px 0 25px 0;
+        width: 100%;
+    }
+    header nav a{
+        padding:10px;
+    }
+
+    header img{
+        order:1;
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .content1 img{
+        display: none;
+    }
+    .content1 .inner1 div .button-class{
+        margin: 20px;
+        padding:5px 50px;
+        font-size: 16pt;
+    }
+
+}
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav{
+        order:2;
+        flex-direction: column;
+        margin: 25px 0 25px 0;
+        width: 100%;
+
+    }
+    header nav a{
+        display: block;
+        width:100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding:10px;
+    }
+
+    header img{
+        order:1;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content1 .inner1 div .button-class{
+        margin: 20px;
+        padding:5px 50px;
+    }
+
+    .content1 img{
+        display: none;
+    }
+
+    .horizontal-part{
+        display: unset;
+        flex-direction: unset;
+        justify-content: unset;
+    }
+
+    .chunk:nth-child(2){
+        margin-left: unset;
+    }
+
+    .chunk-1:nth-child(2){
+        margin-left: unset;
+    }
+
+    .chunk-1:nth-child(3){
+        margin-left: unset;
+    }
+}
+
+@media(max-width:600px),(max-width:900px){
+    .middle-img{
+        width:100%;
+        height: auto;
+    }
+}
+
+header nav a:hover{
+	color:white;
+	background: black;
+}
+
+.content1 .inner1 div .button-class{
+	border: 1px solid black;
+    display: inline-block;
+    font-size: 16pt;
+    background: white;
+}
+.content1 .inner1 div .button-class:hover{
+	color:white;
+	background: black;
+}
+
+.lines-class{
+    padding:40px 25px;
+    margin:40px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.chunk,.chunk-1{
+    margin:30px 0;
+    text-align: left;
+}
