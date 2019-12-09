@@ -125,6 +125,8 @@ header nav a{
         margin-left: 25px;
     }
 
+
+
 @media(max-width:900px){
     header nav{
         display:flex;
@@ -247,5 +249,9 @@ header nav a:hover{
 
 .chunk,.chunk-1{
     margin:30px 0;
+    text-align: left;
+}
+
+.chunk-2{
     text-align: left;
 }
