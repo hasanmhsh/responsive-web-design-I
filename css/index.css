@@ -152,7 +152,7 @@ header nav a{
     }
 
     .content1{
-        display: unset;
+        display: block;
     }
     header nav{
         order:2;
@@ -182,7 +182,7 @@ header nav a{
 @media(max-width:600px){
 
     .content1{
-        display: unset;
+        display: block;
     }
     header{
         flex-direction: column;
@@ -212,7 +212,7 @@ header nav a{
         order:1;
         max-width: 100%;
         height: auto;
-        margin-left: unset;
+        margin-left: 0;
     }
 
     .content1 .inner1 div .button-class{
@@ -225,21 +225,21 @@ header nav a{
     }
 
     .horizontal-part{
-        display: unset;
+        display: block;
         flex-direction: unset;
         justify-content: unset;
     }
 
     .chunk:nth-child(2){
-        margin-left: unset;
+        margin-left: 0;
     }
 
     .chunk-1:nth-child(2){
-        margin-left: unset;
+        margin-left: 0;
     }
 
     .chunk-1:nth-child(3){
-        margin-left: unset;
+        margin-left: 0;
     }
 }
 
