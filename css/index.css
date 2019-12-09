@@ -88,24 +88,19 @@ h3{
 header{
     display: flex;
     width: 100%;
+    align-content: flex-end;
+    align-items: center;
 }
 
-header img{
-    width:auto;
-}
+
 
 header nav a{
 	color: dimgrey;
     text-decoration: none;
     width:100%;
-    font-size: 20pt;
+    font-size: 14pt;
 }
 
-    header nav{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     .horizontal-part{
         display: flex;
@@ -125,20 +120,42 @@ header nav a{
         margin-left: 25px;
     }
 
-
-
-@media(max-width:900px){
+    .content1{
+        display: flex;
+    }
     header nav{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         
-        order:2;
         margin: 25px 0 25px 0;
         width: 100%;
     }
+
+    header img{
+        margin-left: 45px;
+    }
+
     header nav a{
         padding:10px;
+    }
+
+    .content1 .inner1 div .button-class{
+        margin: 20px;
+        padding:5px 50px;
+    }
+
+@media(max-width:900px){
+
+    body{
+        margin: 30px 0;
+    }
+
+    .content1{
+        display: unset;
+    }
+    header nav{
+        order:2;
     }
 
     header img{
@@ -163,12 +180,20 @@ header nav a{
 
 }
 @media(max-width:600px){
+
+    .content1{
+        display: unset;
+    }
     header{
         flex-direction: column;
         align-items: center;
     }
 
     header nav{
+        
+        justify-content: unset;
+        
+        margin: unset;
         order:2;
         flex-direction: column;
         margin: 25px 0 25px 0;
@@ -187,6 +212,7 @@ header nav a{
         order:1;
         max-width: 100%;
         height: auto;
+        margin-left: unset;
     }
 
     .content1 .inner1 div .button-class{
@@ -253,5 +279,6 @@ header nav a:hover{
 }
 
 .chunk-2{
+    margin-left: 30px;
     text-align: left;
 }
